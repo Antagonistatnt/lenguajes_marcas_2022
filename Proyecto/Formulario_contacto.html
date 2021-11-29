@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <style>
+    table {
+  background: url(leopardskin.jpg);
+  color: rgb(236, 220, 75);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+table {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 2px solid purple;
+  margin: auto;
+  text-align: center;
+}
+h1  {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+li {
+  text-align: center;
+  list-style: none;
+}
+
+
+  </style>
+
+
+
+</head>
+
+
+<body>
+  <form action="#" method="post">
+    <h1>Contacto</h1>
+    <h2>Cuéntenos en qué podemos mejorar</h2>
+    <table>
+      <tr>
+        <td>
+          <label for="Nombre">Tu Nombre:</label>
+          <input type="text" placeholder="Escriba su nombre" pattern="[a-zA-Zá-úÁ-Ú\s]*" id="Nombre" name="Nombre"
+            required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Correo">Tu email:</label>
+          <input type="email" placeholder="correo@mail.com" pattern="[a-z0-9._%&]+@[a-z9-0.-]+\.[a-z]{2,}$" id="Correo"
+            name="Correo" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Usuario">Tu nombre de Usuario:</label>
+          <input type="text" placeholder="Nombre de Usuario" pattern="[a-zA-Zá-úÁ-Ú\s]*" id="Usuario" name="Usuario"
+            required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Contraseña">Contraseña</label>
+          <input type="password" placeholder="Escriba su contraseña"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*%&).{6,}" id="Contraseña" name="Contraseña"
+            title="Debe contener un mínimo de 8 caracteres" required>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <label for="País">País</label>
+          <select id="País" required>
+            <option value="" selected disabled>Seleccione su país</option>
+            <optgroup label="">
+              <option value="ar">Alemania</option>
+              <option value="fr">Francia</option>
+              <option value="it">Italia</option>
+              <option value="po">Portugal</option>
+              <option value="es">España</option>
+              <option value="be">Bélgica</option>
+              <option value="ho">Holanda</option>
+              <option value="cro">Croacia</option>
+              <option value="ru">Rusia</option>
+              <option value="pol">Polonia</option>
+              <option value="re">Reino Unido</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit">
+
+          
+        </td>
+      </tr>
+
+    </table>
+    
+  </form>
+  <br>
+  <nav>
+    <ul>
+        <li><a href="Inicio.html">Volver a pantalla de Inicio</a></li>
+        <li><a href="Quienesomos.html">¿Quiénes somos?</a></li>
+        <li><a href="Noticias.html">Noticias</a></li>
+        <li><a href="Formulario_registro.html">Registro</a></li>
+    </ul>
+</nav>
+
+</body>
+
+
+</html>

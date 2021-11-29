@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tabla</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+  background: url(leopardskin.jpg);
+  color: rgb(236, 220, 75);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+table {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid purple;
+  margin: auto;
+  text-align: right;
+  
+}
+h1 {
+    text-align: center;
+}
+li {
+    text-align: center;
+    list-style: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>Formulario de registro a nuestra WEB</h1>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" placeholder="Escriba su nombre" id="Nombre" name="Nombre"
+                        pattern="[a-zA-Zá-úÁ-Ú\s]*" required>
+                </td>
+                <td>
+                    <label for="Usuario">Nombre de usuario:</label>
+                    <input type="text" placeholder="Escriba su nombre de usuario" id="Usuario" name="Usuario"
+                        pattern="[a-zA-Zá-úÁ-Ú\s]*" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Apellidos">Apellidos:</label>
+                    <input type="text" placeholder="Escriba sus apellidos" id="Apellidos" name="Apellidos"
+                        pattern="[a-zA-Zá-úÁ-Ú\s]*" required>
+                </td>
+
+                <td>
+                    <label for="Fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="Fecha" name="Fecha" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Correo">Correo electrónico:</label>
+                    <input type="email" placeholder="correo@mail.com" pattern="[a-z0-9._%&]+@[a-z9-0.-]+\.[a-z]{2,}$"
+                        id="Correo" name="Correo" required>
+                </td>
+                <td colspan="2">
+                    <label for="Contraseña">Contraseña:</label>
+                    <input type="password" placeholder="Escriba su contraseña"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*%&).{8,}" id="Contraseña" name="Contraseña"
+                        title="Debe contener un mínimo de 8 caracteres" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Dirección">Dirección:</label>
+                    <input type="text" placeholder="Dirección..." pattern="[A-Za-z\s]" id="Dirección" name="Dirección"
+                        required>
+                </td>
+                <td>
+                    <label for="Población">Seleccione su población:</label>
+                    <select id="Población" required>
+                        <option value="" selected disabled>Seleccione su población</option>
+                        <optgroup label="">
+                            <option value="pu">Puertollano</option>
+                            <option value="ar">Argamasilla</option>
+                            <option value="al">Almodóvar</option>
+                            <option value="ci">Ciudad Real</option>
+                            <option value="bo">Bolaños</option>
+                            <option value="he">Herencia</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DNI">DNI:</label>
+                    <input type="text" placeholder="Escriba su DNI" pattern="[0-9]{8}[A-Za-z]{1}" id="DNI" name="DNI"
+                        required>
+                </td>
+                <td>
+                    <label for="Postal">Código postal:</label>
+                    <input type="text" placeholder="Código postal" pattern="[0-9]{5}" id="Postal" name="Postal"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+
+        </table>
+        
+       
+
+    </form>
+    <br>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Volver a pantalla de Inicio</a></li>
+                <li><a href="Quienesomos.html">¿Quiénes somos?</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="Formulario_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+
+
+</body>
+
+</html>
